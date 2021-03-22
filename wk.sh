@@ -25,7 +25,7 @@ top_wk=./wk
 top_os=./wk/os
 top_ss=./wk/ss
 top_jk=./wk/jk
-top_blg=./blg
+top_blg=./md
 
 #
 #
