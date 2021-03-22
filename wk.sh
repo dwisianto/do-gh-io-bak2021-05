@@ -25,6 +25,7 @@ top_wk=./wk
 top_os=./wk/os
 top_ss=./wk/ss
 top_jk=./wk/jk
+top_blg=./blg
 
 #
 #
@@ -37,10 +38,15 @@ top_jk=./wk/jk
 #
 #
 #
-. ${top_jk}/jkl/jkl.sh $top_arg1 $top_arg2
-. ${top_jk}/j0/jk0.sh
-. ${top_jk}/j1/jk1.sh $top_arg1 $top_arg2
-. ${top_jk}/k2/k2.sh $top_arg1 $top_arg2
+. ${top_jk}/jkl/jkl.sh $top_args
+. ${top_jk}/k0/k0.sh
+. ${top_jk}/k1/k1.sh $top_args
+. ${top_jk}/k2/k2.sh $top_args
+
+#
+#
+#
+. ${top_jk}/d1/d1.sh $top_args
 
 
 # Group
