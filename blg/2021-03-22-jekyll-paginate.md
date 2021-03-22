@@ -133,5 +133,5 @@ bundle exec jekyll serve
 
 # References
 
-- 
+- https://github.com/jekyll/jekyll-paginate
 - https://github.com/sverrirs/jekyll-paginate-v2
