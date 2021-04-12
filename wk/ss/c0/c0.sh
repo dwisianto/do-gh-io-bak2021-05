@@ -30,7 +30,7 @@ function Jk0_New () {
 
     test $1 &&  echo " # arg exists" || echo " # arg missing"
     echo "cd $SRC_NM ; jekyll new $1"
-    echo "cp .${top_ssß}/$C0_NM/favicon.ico ../$SRC_NM/$1"
+    echo "cp .${top_ss}/$C0_NM/favicon.ico ../$SRC_NM/$1"
     echo
 }
 

@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Paginate Example - 02 Categories
-email: jekyll@sverrirs.com
+title: Elfant's Scribble
+email: dwisianto@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Shows how the jekyll-paginate-v2 gem can be used to paginate on categories.
+  Fundamentals of Machine Learning and Natural Language 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  sverrirs
+github_username:  dwisianto
 
 # Enable future posts (this is to track a bug with --drafts causing issues)
 future: false
@@ -39,12 +39,80 @@ exclude:
 permalink: /:year/:month/:title.html
 #permalink: pretty
 
+#
 # Pagination Settings
+#
 pagination:
   enabled: true
-  per_page: 2
+  per_page: 3
   permalink: '/page/:num/'
   title: ' - page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+
+
+#
+# scholar
+#
+scholar:
+  style: apa
+  locale: en
+  
+  sort_by: none
+  order: ascending
+  
+  group_by: none
+  group_order: ascending
+  
+  source: ./b_bib
+  bibliography: references.bib
+  bibliography_template: ""
+  
+  replace_strings: true
+  join_strings:    true
+  
+  bibtex_filters:
+  - superscript
+  - latex
+  
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+  
+  query: "@*"
+
+
+
+#
+# Collection configurations
+#
+collections:
+  _ml:
+    output: true
+    permalink: /ml/:path/
+#  col_nlp:
+#    output: true
+#    permalink: /nlp/:path/
+#  col_alg: 
+#    output: true
+#    permalink: /alg/:path/
+
+#s
+#
+#
+autopages:
+  enabled: true
+  tags: 
+    enabled: true
+    layouts: 
+      - autopage_collections_tags.html #- autopage_tags.html #
+  categories:
+    enabled: true
+    layouts:
+      - autopage_cat.html
+  collections:
+    enabled: true
+    slugify:
+      mode: 'ascii'
+      cased: true  # Causes B+W tag to show up as it is written on the terry-pratchet-diary-2017.md page and not lowercase

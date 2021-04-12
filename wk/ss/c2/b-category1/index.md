@@ -8,6 +8,3 @@ pagination:
   enabled: true
 ---
 
-This page lists all posts available and paginates them.
-
-Try clicking the category pages at the top of this page.

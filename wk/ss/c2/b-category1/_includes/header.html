@@ -25,6 +25,27 @@
           {% endif %}
         {% endfor %}
       </div>
+
+    <!-- for mathjax support -->
+    {% if page.usemathjax %}
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
+    <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {% endif %}
+
+
+    <p>
+      <b>Autopage Created:</b><br>
+      {% for my_page in site.pages %}  
+        {% if my_page.title and my_page.autogen == nil and my_page.autopage != nil %}
+        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {% endif %}
+      {% endfor %}
+    </p>
+
     </nav>
 
   </div>

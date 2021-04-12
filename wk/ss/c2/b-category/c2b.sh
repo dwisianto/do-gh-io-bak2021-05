@@ -17,18 +17,18 @@ function c2b_Add () {
     lcl_src=$1
     lcl_nm=$2
         
-    echo "cp ${top_jk}/$lcl_src/_config.yml ${SRC_NM}/$lcl_nm"
-    echo "cp ${top_jk}/$lcl_src/Gemfile ${SRC_NM}/$lcl_nm"
-    echo "cp -rf ${top_jk}/$lcl_src/_includes ${SRC_NM}/$lcl_nm"
-    echo "cp -rf ${top_jk}/$lcl_src/_layouts ${SRC_NM}/$lcl_nm"
+    echo "cp ${top_ss}/$lcl_src/_config.yml ${SRC_NM}/$lcl_nm"
+    echo "cp ${top_ss}/$lcl_src/Gemfile ${SRC_NM}/$lcl_nm"
+    echo "cp -rf ${top_ss}/$lcl_src/_includes ${SRC_NM}/$lcl_nm"
+    echo "cp -rf ${top_ss}/$lcl_src/_layouts ${SRC_NM}/$lcl_nm"
 
-    echo "cp  ${top_jk}/$lcl_src/index.md ${SRC_NM}/$lcl_nm"
+    echo "cp  ${top_ss}/$lcl_src/index.md ${SRC_NM}/$lcl_nm"
     echo "rm -f ${SRC_NM}/$lcl_nm/index.markdown"
 
-    echo "cp -rf ${top_jk}/$lcl_src/_posts ${SRC_NM}/$lcl_nm"
-    echo "cp -rf ${top_jk}/$lcl_src/cars/_posts ${SRC_NM}/$lcl_nm"
-    echo "cp -rf ${top_jk}/$lcl_src/categories ${SRC_NM}/$lcl_nm"
-    echo "cp -rf ${top_jk}/$lcl_src/toyota ${SRC_NM}/$lcl_nm"
+    echo "cp -rf ${top_ss}/$lcl_src/_posts ${SRC_NM}/$lcl_nm"
+    echo "cp -rf ${top_ss}/$lcl_src/cars/_posts ${SRC_NM}/$lcl_nm"
+    echo "cp -rf ${top_ss}/$lcl_src/categories ${SRC_NM}/$lcl_nm"
+    echo "cp -rf ${top_ss}/$lcl_src/toyota ${SRC_NM}/$lcl_nm"
 
 }
 

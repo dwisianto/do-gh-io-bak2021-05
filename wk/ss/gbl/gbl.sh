@@ -1,4 +1,8 @@
 
+
+#
+# Print and run commands
+#
 function Run0 { "$@" ;  }
 function Run1 { echo "# $@" ; "$@" | bash ; }
 function Run2 { echo "${@/eval/}" ; "$@" ; }
@@ -16,10 +20,9 @@ C2A_NM=c2/a
 C2B_NM=c2/b-category
 C2B1_NM=c2/b-category1
 C2B2_NM=c2/b-category2
-C2C_NM=c2/c-tags
-C2C1_NM=c2/c-tags1
-C2C2_NM=c2/c-tags2
-C2C3_NM=c2/c-tags3
+C2C1_NM=c2/c-collect1
+C2C2_NM=c2/c-collect2
+C2C3_NM=c2/c-collect3
 
 
 D1_NM=d1

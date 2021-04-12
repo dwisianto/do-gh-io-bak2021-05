@@ -41,10 +41,13 @@ top_blg=./wk/blg
 # Development Operation Content Blog Bibliography
 #
 . ${top_ss}/c0/c0.sh
-. ${top_ss}/c1/a/c1a.sh $top_args
-#. ${top_ss}/c2/a/c2a.sh $top_args
-#. ${top_jk}/c2/b-category/c2b.sh $top_args
+. ${top_ss}/c2/b-category/c2b.sh $top_args
 . ${top_ss}/c2/b-category1/c2b1.sh $top_args
+. ${top_ss}/c2/c-collect1/c2c1.sh $top_args
+. ${top_ss}/c2/c-collect2/c2c2.sh $top_args
+. ${top_ss}/c2/c-collect3/c2c3.sh $top_args
+
+
 #. ${top_jk}/c2/b-category2/c2b2.sh $top_args
 . ${top_ss}/c2/c-tags/c2c.sh $top_args
 . ${top_ss}/c2/c-tags1/c2c1.sh $top_args
@@ -53,6 +56,9 @@ top_blg=./wk/blg
 # . ${top_jk}/k1/k1.sh $top_args
 # . ${top_jk}/k2/k2.sh $top_args
 # . ${top_jk}/k3/k3.sh $top_args
+#. ${top_ss}/c3/a/c1a.sh $top_args
+#. ${top_ss}/c3/a/c2a.sh $top_args
+
 
 
 #
